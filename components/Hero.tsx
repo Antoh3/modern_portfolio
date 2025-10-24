@@ -55,12 +55,12 @@ function Hero() {
                     </h2>
 
                     <TextGenerateEffect
-                        className='text-center text-[40px] md:text-5xl lg:text-6xl'
+                        className='text-center text-[40px] md:text-lg lg:text-xl'
                         words='Transforming Concepts and skills in Seamless Experiences and Carrer Goals'
                     />
 
-                    <p className='text-center text-white mt-5 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                    Hi I'm <span className='text-purple-500'>Emmanuel Muuo</span> FullStack Developer Based in Kenya
+                    <p className='text-center text-white mt-5 md:tracking-wider mb-4 text-sm md:text-md lg:text-lg'>
+                    Hello I'm <span className='text-purple-500'>Emmanuel Muuo</span> FullStack Developer Based in Kenya
                     </p>
 
                     <MagicButton

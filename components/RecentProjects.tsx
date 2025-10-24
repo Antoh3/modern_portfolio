@@ -13,11 +13,11 @@ function RecentProjects() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center p-1 mt-5">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] mt-0 flex items-center justify-center sm:w-80 w-[85vw] gap-4 mb-10 p-2"
+            className="lg:min-h-[32.5rem] h-[25rem] mt-0 flex items-center justify-center sm:w-70 w-[75vw] gap-4 mb-10 p-2"
             key={item.id}
           >
             <PinContainer title="View on Github" href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-80 w-[55vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-70 w-[55vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -51,12 +51,12 @@ function RecentProjects() {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
+                {/* <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple-500">
                     Check Live Site
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                </div> */}
               </div>
             </PinContainer>
           </div>
