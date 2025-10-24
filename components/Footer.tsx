@@ -3,15 +3,30 @@
 import type React from "react"
 
 import { motion } from "framer-motion"
-// import { Button } from "@/components/ui/button"
+
 // import { Input } from "@/components/ui/input"
 // import { Twitter, Github, Linkedin, Youtube, ArrowRight, FileText } from "lucide-react"
 import { FaLocationArrow } from 'react-icons/fa6'
-import { FaTwitter,FaGithub,FaLinkedin,FaYoutube,FaFile,FaImagePortrait ,FaFileArrowDown} from "react-icons/fa6"
+import { FaTwitter, FaGithub, FaLinkedin, FaYoutube, FaFile, FaImagePortrait, FaFileArrowDown } from "react-icons/fa6"
 import Link from "next/link"
 import MagicButton from "./MagicButton"
 
+
 export function Footer() {
+
+  const handleDownload = (fileName: string) => {
+    if (typeof window !== "undefined") {
+      const fileUrl = `/${fileName}`;
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
+
   return (
     <footer className="border-t border-zinc-800 py-16 relative bg-black">
       <div className="container px-4 md:px-6 mx-auto">
@@ -46,19 +61,21 @@ export function Footer() {
             <ul className="space-y-2">
               <FooterLink href="#features">
                 <MagicButton
-                 title="Download Resume"
-                 icon= {<FaFileArrowDown />}
-                 position="right"
-                 otherClasses="p-2"
-                 />
+                  title="Download Resume"
+                  icon={<FaFileArrowDown />}
+                  position="right"
+                  otherClasses="p-2"
+                  handleClick={() => handleDownload("resume.pdf")}
+                />
               </FooterLink>
               <FooterLink href="#how-it-works">
                 {/* Download Cv <FaFileArrowDown /> */}
                 <MagicButton
-                 title="Download Cv"
-                 icon= {<FaFileArrowDown />}
-                 position="right"
-                 />
+                  title="Download Cv"
+                  icon={<FaFileArrowDown />}
+                  position="right"
+                  handleClick={() => handleDownload("cv.pdf")}
+                />
               </FooterLink>
               {/* <FooterLink href="#pricing">Pricing</FooterLink> */}
               {/* <FooterLink href="/chat">Try the Chat</FooterLink> */}

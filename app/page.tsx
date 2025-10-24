@@ -9,7 +9,7 @@ import { FaHammer } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className='relative bg-gray-900 flex justify-center items-center flex-col overflow-hidden mx-auto'>
+    <main className='relative bg-gray-900 flex  flex-col overflow-hidden mx-auto' >
       <div className="">
         <FloatingNav
           navItems={[

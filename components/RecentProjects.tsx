@@ -5,15 +5,15 @@ import { FaLocationArrow } from 'react-icons/fa6'
 
 function RecentProjects() {
   return (
-    <div className="py-20">
+    <div className="py-20 ms-1">
       <h1 className="heading text-white text-2xl text-center">
         A small selection of{" "}
         <span className="text-purple-500 text-2xl text-center">recent projects</span>
       </h1>
-       <div className="flex flex-wrap items-center justify-center p-4 gap-5 mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center p-1 mt-5">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] mt-0 flex items-center justify-center sm:w-96 w-[90vw]"
+            className="lg:min-h-[32.5rem] h-[25rem] mt-0 flex items-center justify-center sm:w-96 w-[90vw] gap-4"
             key={item.id}
           >
             <PinContainer
@@ -39,7 +39,7 @@ function RecentProjects() {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
