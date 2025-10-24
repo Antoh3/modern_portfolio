@@ -1,0 +1,38 @@
+sudo chown -R ale:ale "/media/ale/New Volume/Projects/myportfolio"
+
+sudo chmod +r "/media/ale/NewVolume E/Tutorial/Build and Deploy an Amazing Developer Portfolio with Next JS and Framer Motion(720P_HD).mp4"
+
+sudo chmod +x "/media/ale/NewVolume E"
+sudo chmod +x "/media/ale/NewVolume E/Tutorial"
+
+
+vlc "/media/ale/NewVolume E/Tutorial/Build and Deploy an Amazing Developer Portfolio with Next JS and Framer Motion(720P_HD).mp4"
+
+chmod -R u+rw /path/to/directory
+
+#change ownership
+sudo chown $USER:$USER /path/to/directory
+
+#then give read and write
+chmod u+rw /path/to/directory
+
+#check permisions
+ls -ld /path/to/directory
+
+#giving permisons to directoriy and its subdirectories
+chmod -R u+rw /path/to/directory
+
+
+#Saving in diffrent terminals
+Action	Keys
+Save	Ctrl + x then Ctrl + s
+Exit	Ctrl + x then Ctrl + c
+
+If you're using vim or vi (you’ll see -- INSERT -- at the bottom when typing):
+Press Esc to leave insert mode
+
+Type :wq and press Enter to write (save) and quit
+
+Or type :q! to quit without saving
+
+

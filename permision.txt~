@@ -1,0 +1,9 @@
+sudo chown -R ale:ale "/media/ale/New Volume/Projects/myportfolio"
+
+sudo chmod +r "/media/ale/NewVolume E/Tutorial/Build and Deploy an Amazing Developer Portfolio with Next JS and Framer Motion(720P_HD).mp4"
+
+sudo chmod +x "/media/ale/NewVolume E"
+sudo chmod +x "/media/ale/NewVolume E/Tutorial"
+
+
+vlc "/media/ale/NewVolume E/Tutorial/Build and Deploy an Amazing Developer Portfolio with Next JS and Framer Motion(720P_HD).mp4"
